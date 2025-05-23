@@ -42,7 +42,6 @@ body {
 }
 
 .panel {
-  min-height: 25vh;
   padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -80,4 +79,11 @@ a {
   color: var(--warm-gold);
   font-weight: bold;
   text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--light-beige); /* optional */
+  color: var(--charcoal);         /* optional */
 }
