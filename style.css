@@ -58,6 +58,7 @@ body {
 
 .beige {
   background: var(--light-beige);
+  color: var(--charcoal);
 }
 
 h1, h2 {
