@@ -42,12 +42,22 @@ body {
 }
 
 .panel {
-  padding: 5rem 2rem;
+  position: relative;
+  padding: 6rem 2rem 4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.panel-title {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--charcoal);
 }
 
 .teal {
