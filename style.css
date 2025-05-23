@@ -42,7 +42,7 @@ body {
 }
 
 .panel {
-  height: 100vh;
+  min-height: 25vh;
   padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
