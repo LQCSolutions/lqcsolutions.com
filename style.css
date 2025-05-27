@@ -62,7 +62,7 @@ body {
 }
 
 .panel-content {
-  max-width: 700px;
+  width: 80%;
   margin-left: 6rem;
   font-size: 1.25rem;
   line-height: 1.8;
@@ -70,11 +70,9 @@ body {
 }
 
 .panel-title {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
-  margin: 0;
-  font-size: 2rem;
+  position: static;
+  margin: 0 0 2rem 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--charcoal);
 }
