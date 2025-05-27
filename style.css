@@ -50,12 +50,18 @@ body {
   text-align: center;
 }
 
+.panel-content {
+  max-width: 700px;
+  margin-left: 6rem;  /* controls horizontal offset */
+  text-align: left;
+}
+
 .panel-title {
   position: absolute;
   top: 2rem;
   left: 2rem;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--charcoal);
 }
