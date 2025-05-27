@@ -135,6 +135,13 @@ a {
   text-decoration: none;
 }
 
+.mission-punchline {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
 .footer {
   text-align: center;
   padding: 2rem;
