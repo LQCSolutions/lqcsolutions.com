@@ -77,6 +77,16 @@ body {
   color: var(--charcoal);
 }
 
+.panel-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: var(--warm-gold);
+  margin-top: 0.5rem;
+  border-radius: 3px;
+}
+
 /* Small mods */
 .teal .panel-title,
 .teal .panel-content {
