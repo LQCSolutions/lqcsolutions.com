@@ -80,7 +80,7 @@ body {
 .panel-title::after {
   content: "";
   display: block;
-  width: 80px;
+  width: 150px;
   height: 5px;
   background-color: var(--warm-gold);
   margin-top: 0.5rem;
