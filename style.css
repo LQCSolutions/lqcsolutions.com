@@ -87,6 +87,22 @@ body {
   border-radius: 3px;
 }
 
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--warm-gold);
+  border-radius: 2px;
+}
+
 /* Small mods */
 .teal .panel-title,
 .teal .panel-content {
