@@ -136,10 +136,11 @@ a {
 }
 
 .mission-punchline {
-  font-weight: bold;
-  font-size: 1.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
   text-align: center;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  width: fit-content; /* centers only the width of the text */
 }
 
 .footer {
