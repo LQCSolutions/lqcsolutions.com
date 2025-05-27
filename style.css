@@ -46,13 +46,26 @@ body {
   padding: 6rem 2rem 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+}
+
+/* Teal panel — white text */
+.teal {
+  background-color: var(--soft-teal);
+  color: white;
+}
+
+/* Beige panel — charcoal text */
+.beige {
+  background-color: var(--light-beige);
+  color: var(--charcoal);
 }
 
 .panel-content {
   max-width: 700px;
-  margin-left: 6rem;  /* controls horizontal offset */
+  margin-left: 6rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
   text-align: left;
 }
 
@@ -66,13 +79,13 @@ body {
   color: var(--charcoal);
 }
 
-.teal {
-  background: var(--soft-teal);
-  color: #ffffff;
+.teal .panel-title,
+.teal .panel-content {
+  color: white;
 }
 
-.beige {
-  background: var(--light-beige);
+.beige .panel-title,
+.beige .panel-content {
   color: var(--charcoal);
 }
 
