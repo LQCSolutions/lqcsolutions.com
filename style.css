@@ -103,6 +103,17 @@ body {
   border-radius: 1px;
 }
 
+.services-list {
+  list-style: none;
+  padding-left: 2rem; /* controls horizontal indentation */
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+
+.services-list li {
+  margin: 0.5rem 0;
+}
+
 /* Small mods */
 .teal .panel-title,
 .teal .panel-content {
