@@ -98,14 +98,14 @@ body {
   left: 0;
   bottom: 0.0em;
   width: 100%;
-  height: 2px; /* thinner underline */
+  height: 2px;
   background-color: var(--warm-gold);
   border-radius: 1px;
 }
 
 .services-list {
   list-style: none;
-  padding-left: 2rem; /* controls horizontal indentation */
+  padding-left: 5rem; /* controls horizontal indentation */
   margin-top: 2rem;
   line-height: 1.8;
 }
@@ -152,6 +152,28 @@ a {
   text-align: center;
   margin: 2rem auto;
   width: fit-content; /* centers only the width of the text */
+}
+
+.contact-panel {
+  align-items: center;
+  text-align: center;
+}
+
+.contact-message {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+.contact-message a {
+  color: var(--warm-gold);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-message a:hover {
+  text-decoration: underline;
 }
 
 .footer {
