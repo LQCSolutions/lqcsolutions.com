@@ -79,6 +79,7 @@ body {
   color: var(--charcoal);
 }
 
+/* Small mods */
 .teal .panel-title,
 .teal .panel-content {
   color: white;
