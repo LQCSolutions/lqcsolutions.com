@@ -142,13 +142,14 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .item-content {
   margin-top: 0.5rem;
   display: none;
-  font-size: 0.95rem;
-  color: white; /* changed from charcoal */
+  font-size: 1.1rem;
+  color: white;
 }
 
 .expandable-item.open .item-content {
@@ -158,6 +159,11 @@ body {
 .plus-sign {
   font-weight: normal;
   margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.expandable-item.open .plus-sign {
+  transform: rotate(45deg);
 }
 
 /* Small mods */
