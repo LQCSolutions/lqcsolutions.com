@@ -105,13 +105,46 @@ body {
 
 .services-list {
   list-style: none;
-  padding-left: 5rem; /* controls horizontal indentation */
-  margin-top: 2rem;
-  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
 }
 
-.services-list li {
-  margin: 0.5rem 0;
+.expandable-item {
+  background-color: var(--beige);
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expandable-item:hover {
+  background-color: var(--warm-gold);
+  color: white;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.item-content {
+  margin-top: 0.5rem;
+  display: none;
+  font-size: 0.95rem;
+  color: var(--charcoal);
+}
+
+.expandable-item.open .item-content {
+  display: block;
+}
+
+.plus-sign {
+  font-weight: normal;
+  margin-left: 0.5rem;
 }
 
 /* Small mods */
