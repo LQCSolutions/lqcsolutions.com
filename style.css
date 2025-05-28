@@ -179,7 +179,7 @@ a {
 .contact-logo {
   display: block;
   margin: 4rem auto 2rem auto;
-  width: 20vw;              /* 20% of viewport width */
+  width: 40vw;              /* 20% of viewport width */
   height: auto;             /* preserve aspect ratio */
 }
 
