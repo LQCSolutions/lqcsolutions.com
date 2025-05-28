@@ -1,5 +1,7 @@
 :root {
   --soft-teal: #4FA49A;
+  --contrast-teal: rgba(255, 255, 255, 0.12);
+  --contrast-teal-light: rgba(255, 255, 255, 0.18);
   --warm-gold: #D4B574;
   --light-beige: #FAF6F0;
   --charcoal: #2E2E2E;
@@ -111,7 +113,7 @@ body {
 }
 
 .expandable-item {
-  background-color: rgba(255, 255, 255, 0.12); /* subtle contrast on teal */
+  background-color: var(--contrast-teal);
   color: white;
   border-radius: 8px;
   margin: 1rem 0;
@@ -123,7 +125,7 @@ body {
 }
 
 .expandable-item:hover {
-  background-color: rgba(255, 255, 255, 0.18); /* slightly more visible */
+  background-color: var(--contrast-teal-light);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -143,10 +145,10 @@ body {
 }
 
 .item-content {
+  margin-top: 0.5rem;
   display: none;
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  color: var(--charcoal);
+  font-size: 0.95rem;
+  color: white; /* changed from charcoal */
 }
 
 .expandable-item.open .item-content {
