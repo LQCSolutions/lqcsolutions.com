@@ -105,11 +105,16 @@ body {
   border-radius: 1px;
 }
 
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .services-list {
   list-style: none;
   padding: 0;
   margin: 2rem 0;
-  max-width: 800px;
+  width: 60vw;   
 }
 
 .expandable-item {
