@@ -179,8 +179,8 @@ a {
 .contact-logo {
   display: block;
   margin: 4rem auto 2rem auto;
-  height: 80px;
-  opacity: 1;
+  width: 20vw;              /* 20% of viewport width */
+  height: auto;             /* preserve aspect ratio */
 }
 
 .footer {
