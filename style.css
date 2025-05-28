@@ -152,13 +152,18 @@ body {
 
 .item-content {
   margin-top: 0.5rem;
-  display: none;
   font-size: 1.1rem;
   color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
 }
 
 .expandable-item.open .item-content {
   display: block;
+  max-height: 500px; /* Large enough to fit your content */
+  opacity: 1;
 }
 
 .plus-sign {
