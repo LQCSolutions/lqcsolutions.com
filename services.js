@@ -1,11 +1,21 @@
 document.querySelectorAll('.expandable-item').forEach(item => {
   item.setAttribute('tabindex', '0'); // Make focusable
+  item.setAttribute('aria-expanded', 'false'); // Initial state
 
   item.addEventListener('click', () => {
-    document.querySelectorAll('.expandable-item').forEach(i => {
-      if (i !== item) i.classList.remove('open');
+    const isOpen = item.classList.contains('open');
+
+    // Close all items
+    document.querySelectorAll('.expandable-item').forEach(el => {
+      el.classList.remove('open');
+      el.setAttribute('aria-expanded', 'false');
     });
-    item.classList.toggle('open');
+
+    // Open clicked one if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      item.setAttribute('aria-expanded', 'true');
+    }
   });
 
   item.addEventListener('keydown', e => {
@@ -14,19 +24,4 @@ document.querySelectorAll('.expandable-item').forEach(item => {
       item.click(); // Trigger the click handler
     }
   });
-
-  item.addEventListener('click', () => {
-  const isOpen = item.classList.contains('open');
-
-  // Close all
-  document.querySelectorAll('.expandable-item').forEach(el => {
-    el.classList.remove('open');
-    el.setAttribute('aria-expanded', 'false');
-  });
-
-  if (!isOpen) {
-    item.classList.add('open');
-    item.setAttribute('aria-expanded', 'true');
-  }
-});
 });
