@@ -177,9 +177,10 @@ a {
 }
 
 .contact-logo {
-  margin-top: 3rem;
-  height: 40px;
-  opacity: 0.8;
+  display: block;
+  margin: 4rem auto 2rem auto;
+  height: 80px;
+  opacity: 1;
 }
 
 .footer {
