@@ -111,19 +111,24 @@ body {
 }
 
 .expandable-item {
-  background-color: var(--beige);
-  border-radius: 8px;
+  background-color: rgba(250, 246, 240, 0.92); /* light beige with slight transparency */
+  border-radius: 6px;
   margin: 1rem 0;
-  padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .expandable-item:hover {
-  background-color: var(--warm-gold);
-  color: white;
-  transform: translateY(-3px);
+  background-color: var(--light-beige);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  color: var(--charcoal);
+}
+
+.expandable-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 .item-header {
