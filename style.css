@@ -179,13 +179,13 @@ a {
 .contact-logo {
   display: block;
   margin: 4rem auto 2rem auto;
-  width: 40vw;              /* 20% of viewport width */
-  height: auto;             /* preserve aspect ratio */
+  width: 40vw;
+  height: auto;
 }
 
 .footer {
   text-align: center;
-  padding: 2rem;
-  background: var(--light-beige); /* optional */
-  color: var(--charcoal);         /* optional */
+  padding: 0.75rem 0;
+  background-color: var(--light-beige);
+  color: var(--charcoal);
 }
