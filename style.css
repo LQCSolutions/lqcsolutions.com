@@ -130,11 +130,9 @@ body {
 }
 
 .expandable-item:hover {
-  /*background-color: var(--contrast-teal-light);*/
-  /*box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);*/
   background-color: var(--warm-gold);
   color: white;
-  border-radius: 12px; /* more rounded */
+  border-radius: 12px;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); /* subtle glow */
 }
 
