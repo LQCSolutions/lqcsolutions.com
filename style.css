@@ -111,20 +111,25 @@ body {
 }
 
 .expandable-item {
-  background-color: rgba(250, 246, 240, 0.92); /* light beige with slight transparency */
-  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.12); /* subtle contrast on teal */
+  color: white;
+  border-radius: 8px;
   margin: 1rem 0;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  padding: 1rem 1.25rem;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .expandable-item:hover {
-  background-color: var(--light-beige);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-  color: var(--charcoal);
+  background-color: rgba(255, 255, 255, 0.18); /* slightly more visible */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Expanded state (optional color shift) */
+.expandable-item.open {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .expandable-item:not(:last-child) {
