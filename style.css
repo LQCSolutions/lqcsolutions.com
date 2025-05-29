@@ -48,19 +48,26 @@ body {
   padding: 6rem 2rem 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers the panel title */
+  align-items: center; /* Center children like .panel-title */
+  text-align: center;   /* Optional: applies to text inside children */
 }
 
-/* Teal panel — white text */
-.teal {
-  background-color: var(--soft-teal);
-  color: white;
-}
-
-/* Beige panel — charcoal text */
-.beige {
-  background-color: var(--light-beige);
+.panel-title {
+  font-size: 2.5rem;
+  font-weight: bold;
   color: var(--charcoal);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.panel-title::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 5px;
+  background-color: var(--warm-gold);
+  margin: 0.5rem auto 0;
+  border-radius: 3px;
 }
 
 .panel-content {
@@ -75,23 +82,16 @@ body {
   margin-bottom: 0.0rem;
 }
 
-.panel-title {
-  margin: 0 auto 2rem auto;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--charcoal);
-  position: relative;
-  text-align: center;
+/* Teal panel — white text */
+.teal {
+  background-color: var(--soft-teal);
+  color: white;
 }
 
-.panel-title::after {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 5px;
-  background-color: var(--warm-gold);
-  margin: 0.5rem auto 0 auto;
-  border-radius: 3px;
+/* Beige panel — charcoal text */
+.beige {
+  background-color: var(--light-beige);
+  color: var(--charcoal);
 }
 
 .highlight {
