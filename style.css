@@ -155,6 +155,8 @@ body {
   height: 40px;
   margin-right: 1rem;
   flex-shrink: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 .service-image.large {
@@ -168,14 +170,14 @@ body {
 .item-header {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* <-- Add this line */
+  align-items: center;
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .item-header span:first-of-type {
   flex: 1;
-  margin-left: 1rem; /* optional: spacing between icon and title */
+  margin-left: 1rem;
 }
 
 .item-content {
@@ -192,6 +194,11 @@ body {
   display: block;
   max-height: 500px; /* Large enough to fit your content */
   opacity: 1;
+}
+
+.expandable-item.open .service-icon.small {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .expandable-item:not(.open) .service-image.large {
