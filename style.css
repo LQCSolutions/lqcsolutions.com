@@ -150,6 +150,23 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
+/* Icon shown in collapsed header */
+.service-icon.small {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+/* Image shown in expanded content */
+.service-image.large {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
 .item-header {
   display: flex;
   justify-content: space-between;
