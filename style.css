@@ -161,7 +161,8 @@ body {
   width: 240px;
   height: 160px;
   display: block;
-  margin: 1.5rem auto 1rem auto;
+  margin: 0;           /* remove auto-centering */
+  flex-shrink: 0;      /* prevent image from shrinking */
 }
 
 .item-header {
@@ -199,8 +200,8 @@ body {
 
 .item-detail {
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
   margin-top: 1rem;
   flex-wrap: nowrap;
 }
