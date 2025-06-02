@@ -199,10 +199,14 @@ body {
 
 .item-detail {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
   margin-top: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.item-detail p {
+  flex: 1;
 }
 
 .item-detail img.service-image.large {
