@@ -197,6 +197,26 @@ body {
   display: none;
 }
 
+.item-detail {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.item-detail img.service-image.large {
+  flex-shrink: 0;
+}
+
+.item-detail p {
+  font-size: 1.1rem;
+  color: white;
+  margin: 0;
+  max-width: 60%;
+  line-height: 1.6;
+}
+
 .plus-sign {
   font-weight: normal;
   margin-left: 0.5rem;
