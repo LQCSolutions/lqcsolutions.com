@@ -382,6 +382,10 @@ a {
   border-radius: 4px; /* optional for soft edge */
 }
 
+.gpu-icon {
+  transform: rotate(7deg);
+}
+
 .footer {
   text-align: center;
   padding: 0.5rem 0;
