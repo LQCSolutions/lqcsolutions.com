@@ -365,6 +365,23 @@ a {
   height: auto;
 }
 
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.05);
+  }
+}
+
+.gpu-pulse {
+  animation: glowPulse 2.5s infinite ease-in-out;
+  border-radius: 4px; /* optional for soft edge */
+}
+
 .footer {
   text-align: center;
   padding: 0.5rem 0;
