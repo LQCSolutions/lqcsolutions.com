@@ -378,7 +378,7 @@ a {
 }
 
 .custom {
-  transform: rotate(45);
+  transform: rotate(45deg);
 }
 
 .footer {
