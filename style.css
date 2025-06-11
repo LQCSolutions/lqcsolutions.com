@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: var(--charcoal);
-  font-size: 18px; /* was likely ~16px default */
+  font-size: 20px; /* was likely ~16px default */
   line-height: 1.7;
 }
 
