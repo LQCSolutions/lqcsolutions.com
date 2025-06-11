@@ -130,7 +130,7 @@ body {
 .panel-content p.mission-statement {
   font-size: 1.2rem;
   font-weight: 600;
-  /*max-width: 1200px;    /* match .panel-content */
+  /*max-width: 1200px;*/    /* match .panel-content */
   margin: 0 auto 2.5rem;
 }
 
