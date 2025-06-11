@@ -215,6 +215,12 @@ body {
 
 .item-detail p {
   flex: 1;
+  line-height: 1.65;
+}
+
+.item-detail p strong {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .item-detail img.service-image.large {
