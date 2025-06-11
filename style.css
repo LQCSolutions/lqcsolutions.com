@@ -387,6 +387,12 @@ a {
   color: #1e1e1e;
 }
 
+@media (max-width: 600px) {
+  .highlight-inline::after {
+    height: 0.1em;
+  }
+}
+
 /* Experience Grid Styling */
 #projects-grid {
   display: grid;
