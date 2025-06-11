@@ -72,8 +72,8 @@ body {
 }
 
 .panel-content.hero-content {
-  width: 80%;
-  max-width: 750px;
+  width: 100%;
+  max-width: 900px;  /* wider than before */
   text-align: center;
 }
 
@@ -116,16 +116,21 @@ body {
 
 .hero-list {
   list-style-type: disc;
+  font-size: 1.1rem;
+  line-height: 1.8;
   padding-left: 1.5rem;
-  margin: 1rem auto 2rem;
   text-align: left;
-  display: inline-block;
+  display: block;
+  width: 50%;
+  margin: 1.5rem auto 2rem;
+  transform: translateX(-25%);  /* shifts it to the left by 1/4 width */
 }
 
 .panel-content p.mission-statement {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 2.5rem;
+  max-width: 900px;    /* match .panel-content */
+  margin: 0 auto 2.5rem;
 }
 
 .cta-button {
