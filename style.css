@@ -55,7 +55,8 @@ body {
 .panel-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: var(--charcoal);
+  /*color: var(--charcoal);*/
+  color: white;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -92,6 +93,50 @@ body {
 .beige {
   background-color: var(--light-beige);
   color: var(--charcoal);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #FAF6F0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.panel-content p.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.panel-content p.mission-statement {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.cta-button {
+  background-color: #FAF6F0;
+  color: #333;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e7e2d8;
 }
 
 .highlight {
