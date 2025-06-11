@@ -57,7 +57,7 @@ body {
   font-weight: bold;
   /*color: var(--charcoal);*/
   color: white;
-  position: relative;
+  position: center;
   margin-bottom: 2rem;
 }
 
@@ -69,6 +69,12 @@ body {
   background-color: var(--warm-gold);
   margin: 0.5rem auto 0;
   border-radius: 3px;
+}
+
+.panel-content.hero-content {
+  width: 80%;
+  max-width: 750px;
+  text-align: center;
 }
 
 .panel-content {
@@ -110,11 +116,10 @@ body {
 
 .hero-list {
   list-style-type: disc;
-  padding-left: 2rem;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  color: white;
+  padding-left: 1.5rem;
+  margin: 1rem auto 2rem;
+  text-align: left;
+  display: inline-block;
 }
 
 .panel-content p.mission-statement {
