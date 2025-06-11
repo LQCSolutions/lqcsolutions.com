@@ -213,27 +213,41 @@ body {
   flex-wrap: nowrap;
 }
 
-.item-detail p {
-  flex: 1;
-  line-height: 1.65;
-}
-
-.item-detail p strong {
+/*.item-detail p strong {
   display: inline-block;
-  margin-bottom: 0.5rem;
-}
+  margin-bottom: 0.7rem;
+}*/
 
 .item-detail img.service-image.large {
   flex-shrink: 0;
+  max-height: 140px;
 }
 
-.item-detail p {
+.item-detail .text-block {
+  flex: 1;
+  max-width: 60%;
+}
+
+.item-detail .text-block p {
+  font-size: 1.1rem;
+  color: white;
+  margin: 0 0 1rem 0;
+  line-height: 1.7;
+}
+
+.item-detail .text-block p strong {
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+/*.item-detail p {
+  flex: 1;
   font-size: 1.1rem;
   color: white;
   margin: 0;
   max-width: 60%;
-  line-height: 1.6;
-}
+  line-height: 1.7;
+}*/
 
 .plus-sign {
   font-weight: normal;
