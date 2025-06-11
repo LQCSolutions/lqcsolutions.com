@@ -79,7 +79,7 @@ body {
 
 .panel-content {
   width: 80%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;            /* horizontally centers the block */
   font-size: 1.25rem;
   line-height: 1.8;
@@ -130,7 +130,7 @@ body {
 .panel-content p.mission-statement {
   font-size: 1.2rem;
   font-weight: 600;
-  max-width: 1000px;    /* match .panel-content */
+  max-width: 1200px;    /* match .panel-content */
   margin: 0 auto 2.5rem;
 }
 
