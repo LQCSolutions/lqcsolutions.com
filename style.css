@@ -192,7 +192,7 @@ body {
 
 .expandable-item.open .item-content {
   display: block;
-  max-height: 500px; /* Large enough to fit your content */
+  max-height: auto; /* Large enough to fit your content */
   opacity: 1;
 }
 
