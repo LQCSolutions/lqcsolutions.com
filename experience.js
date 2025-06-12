@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const image = document.createElement("img");
     image.src = project.image;
-    image.alt = project.title;
+    image.alt = "";
     gridItem.appendChild(image);
 
     const title = document.createElement("h2");
