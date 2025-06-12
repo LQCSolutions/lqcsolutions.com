@@ -1,37 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     {
-      title: "PyCont",
-      link: "#",
-      description: "Pseudo-arclength continuation and bifurcation detection engine for nonlinear systems.",
-      image: "images/pycont_resized.png"
-    },
-    {
-      title: "Custom PDE Solvers",
+      title: "Digital Twin for Elastic Deformations",
       link: "#",
       description: "Specialized finite element and surrogate solvers for mechanical systems.",
       image: "images/fem_solver.png"
     },
     {
-      title: "ML for Molecular Design",
+      title: "Numerical Bifurcation Toolkit for PDEs",
+      link: "#",
+      description: "Pseudo-arclength continuation and bifurcation detection engine for nonlinear systems.",
+      image: "images/pycont_resized.png"
+    },
+    {
+      title: "Enhanced Sampling for Protein Folding",
       link: "#",
       description: "Neural operators and deep surrogates trained for quantum chemistry models.",
       image: "images/ml_chemistry.png"
     },
     {
-      title: "Monte Carlo Sampling",
+      title: "AI Surrogate for Phase Separation in Materials",
       link: "#",
       description: "Advanced MCMC algorithms for chemical kinetics and rare event estimation.",
       image: "images/mcmc_sampling.png"
     },
     {
-      title: "Biotech Optimization",
+      title: "Probabilistic Inference of Viral Dynamics",
       link: "#",
       description: "Model-driven parameter estimation for protein folding and enzymatic pathways.",
       image: "images/biotech_modeling.png"
     },
     {
-      title: "HPC Integration",
+      title: "Fast CUDA Poisson Solver",
       link: "#",
       description: "End-to-end GPU and supercomputer deployments for scalable simulation.",
       image: "images/hpc_integration.png"
