@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/fem_solver.png"
     },
     {
-      title: "Numerical Bifurcation Toolkit for PDEs",
+      title: "Bifurcation Toolkit for PDEs",
       link: "#",
       description: "Pseudo-arclength continuation and bifurcation detection engine for nonlinear systems.",
       image: "images/pycont_resized.png"
