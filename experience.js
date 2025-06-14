@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Digital Twin for Elastic Deformations",
       link: "#",
       description: "Physics-informed AI model for predicting metallic deformations",
-      image: "images/fem_solver.png"
+      image: "images/elasticity.png"
     },
     {
       title: "Bifurcation Toolkit for PDEs",
@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "AI Surrogate for Phase Separation in Materials",
       link: "#",
-      description: "New ML operator for computing phase boundaries",
+      description: "New machine learning operator for computing phase boundaries",
       image: "images/mcmc_sampling.png"
     },
     {
       title: "Probabilistic Inference of Viral Dynamics",
       link: "#",
-      description: "Bayesian data assimilation and probabilistic prediction of infection rates",
+      description: "Bayesian data assimilation and prediction of infection rates",
       image: "images/biotech_modeling.png"
     },
     {
