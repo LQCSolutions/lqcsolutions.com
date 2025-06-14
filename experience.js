@@ -3,37 +3,37 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Digital Twin for Elastic Deformations",
       link: "#",
-      description: "Specialized finite element and surrogate solvers for mechanical systems.",
+      description: "Physics-informed AI model for predicting metallic deformations",
       image: "images/fem_solver.png"
     },
     {
       title: "Bifurcation Toolkit for PDEs",
       link: "#",
-      description: "Pseudo-arclength continuation and bifurcation detection engine for nonlinear systems.",
+      description: "Lightweight Python API for numerical continuation and bifurcation detection",
       image: "images/pycont_resized.png"
     },
     {
       title: "Enhanced Sampling for Protein Folding",
       link: "#",
-      description: "Neural operators and deep surrogates trained for quantum chemistry models.",
+      description: "New multifidelity sampling algorithm for improved protein structure predition",
       image: "images/ml_chemistry.png"
     },
     {
       title: "AI Surrogate for Phase Separation in Materials",
       link: "#",
-      description: "Advanced MCMC algorithms for chemical kinetics and rare event estimation.",
+      description: "New ML operator for computing phase boundaries",
       image: "images/mcmc_sampling.png"
     },
     {
       title: "Probabilistic Inference of Viral Dynamics",
       link: "#",
-      description: "Model-driven parameter estimation for protein folding and enzymatic pathways.",
+      description: "Bayesian data assimilation and probabilistic prediction of infection rates",
       image: "images/biotech_modeling.png"
     },
     {
-      title: "Fast CUDA Poisson Solver",
+      title: "Fast GPU Poisson Solver",
       link: "#",
-      description: "End-to-end GPU and supercomputer deployments for scalable simulation.",
+      description: "Resource-efficent implementation of the Poission equation using CUDA in C++",
       image: "images/hpc_integration.png"
     },
   ];
