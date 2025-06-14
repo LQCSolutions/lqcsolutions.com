@@ -433,6 +433,7 @@ a {
   display: block;
   margin: 0.8rem auto 1rem auto;
   border-radius: 8px;
+  filter: brightness(85%);
 }
 
 /* Title */
