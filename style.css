@@ -409,10 +409,14 @@ a {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   text-align: center;
-  padding: 1.5rem;
+  padding: 1.0rem;
   color: var(--charcoal);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.grid-item h2 {
+  margin-bottom: 0.3rem;
 }
 
 .grid-item:hover {
@@ -423,10 +427,12 @@ a {
 
 /* Image Style */
 .grid-item img {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  max-height: 180px;
+  object-fit: contain;
+  display: block;
+  margin: 0.8rem auto 1rem auto;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 /* Title */
