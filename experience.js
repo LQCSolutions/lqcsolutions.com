@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     gridItem.href = project.link;
     gridItem.className = "grid-item";
 
+    const title = document.createElement("h2");
+    title.textContent = project.title;
+    gridItem.appendChild(title);
+
     const image = document.createElement("img");
     image.src = project.image;
     image.alt = "";
     gridItem.appendChild(image);
-
-    const title = document.createElement("h2");
-    title.textContent = project.title;
-    gridItem.appendChild(title);
 
     const description = document.createElement("p");
     description.textContent = project.description;
