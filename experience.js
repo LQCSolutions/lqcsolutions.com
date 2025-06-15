@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Enhanced Sampling for Protein Folding",
       link: "#",
       description: "New multifidelity sampling algorithm for improved protein structure predition",
-      image: "images/ml_chemistry.png"
+      image: "images/alanine_dipeptide.png"
     },
     {
       title: "AI Surrogate for Phase Separation in Materials",
