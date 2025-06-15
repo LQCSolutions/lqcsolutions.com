@@ -18,12 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "New multifidelity sampling algorithm for improved protein structure predition",
       image: "images/alanine_dipeptide.png"
     },
-    /*{
-      title: "AI Surrogate for Phase Separation in Materials",
-      link: "#",
-      description: "New machine learning operator for computing phase boundaries",
-      image: "images/elasticity.png"
-    },*/
     {
       title: "Probabilistic Inference of Viral Dynamics",
       link: "#",
