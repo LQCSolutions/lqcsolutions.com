@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Bifurcation Toolkit for PDEs",
       link: "#",
       description: "Lightweight Python API for numerical continuation and bifurcation detection",
-      image: "images/elasticity.png"
+      image: "images/pycont.png"
     },
     {
       title: "Enhanced Sampling for Protein Folding",
