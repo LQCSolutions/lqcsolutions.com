@@ -55,4 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gridContainer.appendChild(gridItem);
   });
+
+  const titles = document.querySelectorAll('#projects-grid h2');
+  const tallest = Math.max(...[...titles].map(t => t.offsetHeight));
+  titles.forEach(t => t.style.minHeight = tallest + 'px');
 });
