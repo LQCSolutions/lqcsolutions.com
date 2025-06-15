@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const image = document.createElement("img");
     image.src = project.image;
-    image.alt = "";
+    image.alt = project.description;
     image.loading = "lazy";
     gridItem.appendChild(image);
 
