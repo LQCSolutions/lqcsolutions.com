@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Probabilistic Inference of Viral Dynamics",
       link: "#",
       description: "Bayesian data assimilation and prediction of infection rates",
-      image: "images/elasticity.png"
+      image: "images/SIR.png"
     },
     {
       title: "Fast GPU Poisson Solver",
