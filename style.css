@@ -47,7 +47,7 @@ body {
 
 .panel {
   position: relative;
-  padding: 6rem 2rem 4rem;
+  padding: 4rem 2rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
