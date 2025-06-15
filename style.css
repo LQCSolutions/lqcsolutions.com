@@ -111,6 +111,7 @@ body {
 .panel-content p.intro-text {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .hero-list {
