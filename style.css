@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   color: var(--charcoal);
-  font-size: 20px; /* was likely ~16px default */
+  font-size: 20px;
   line-height: 1.7;
 }
 
@@ -24,7 +24,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(250, 246, 240, 0.95); /* light beige with transparency */
+  background: rgba(250, 246, 240, 0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,14 +50,13 @@ body {
   padding: 6rem 2rem 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children like .panel-title */
-  text-align: center;   /* Optional: applies to text inside children */
+  align-items: center;
+  text-align: center;
 }
 
 .panel-title {
   font-size: 2.5rem;
   font-weight: bold;
-  /*color: var(--charcoal);*/
   color: white;
   position: center;
   margin-bottom: 2rem;
@@ -75,30 +74,27 @@ body {
 
 .panel-content.hero-content {
   width: 100%;
-  max-width: 900px;  /* wider than before */
+  max-width: 900px;
   text-align: center;
 }
 
 .panel-content {
   width: 80%;
-  /*max-width: 1200px;*/
-  margin: 0 auto;            /* horizontally centers the block */
+  margin: 0 auto;
   font-size: 1.25rem;
   line-height: 1.8;
-  text-align: left;          /* keeps the paragraph text left-aligned */
+  text-align: left;
 }
 
 .panel-content p {
   margin-bottom: 0.0rem;
 }
 
-/* Teal panel — white text */
 .teal {
   background-color: var(--soft-teal);
   color: white;
 }
 
-/* Beige panel — charcoal text */
 .beige {
   background-color: var(--light-beige);
   color: var(--charcoal);
@@ -126,13 +122,12 @@ body {
   display: block;
   width: 50%;
   margin: 1.5rem auto 2rem;
-  transform: translateX(-25%);  /* shifts it to the left by 1/4 width */
+  transform: translateX(-25%); 
 }
 
 .panel-content p.mission-statement {
   font-size: 1.2rem;
   font-weight: 600;
-  /*max-width: 1200px;*/    /* match .panel-content */
   margin: 0 auto 2.5rem;
 }
 
@@ -225,10 +220,9 @@ body {
   background-color: var(--warm-gold);
   color: white;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); /* subtle glow */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
-/* Expanded state (optional color shift) */
 .expandable-item.open {
   background-color: rgba(255, 255, 255, 0.15);
 }
@@ -250,8 +244,8 @@ body {
   width: 240px;
   height: 160px;
   display: block;
-  margin: 0;           /* remove auto-centering */
-  flex-shrink: 0;      /* prevent image from shrinking */
+  margin: 0;
+  flex-shrink: 0;
 }
 
 .item-header {
@@ -279,7 +273,7 @@ body {
 
 .expandable-item.open .item-content {
   display: block;
-  max-height: 1000px; /* Large enough to fit your content */
+  max-height: 1000px;
   opacity: 1;
 }
 
@@ -299,11 +293,6 @@ body {
   margin-top: 1rem;
   flex-wrap: nowrap;
 }
-
-/*.item-detail p strong {
-  display: inline-block;
-  margin-bottom: 0.7rem;
-}*/
 
 .item-detail img.service-image.large {
   flex-shrink: 0;
@@ -327,14 +316,6 @@ body {
   margin-bottom: 0.7rem;
 }
 
-/*.item-detail p {
-  flex: 1;
-  font-size: 1.1rem;
-  color: white;
-  margin: 0;
-  max-width: 60%;
-  line-height: 1.7;
-}*/
 
 .plus-sign {
   font-weight: normal;
@@ -346,7 +327,6 @@ body {
   transform: rotate(45deg);
 }
 
-/* Small mods */
 .teal .panel-title,
 .teal .panel-content {
   color: white;
@@ -383,7 +363,7 @@ a {
   font-size: 1.6rem;
   text-align: center;
   margin: 2rem auto;
-  width: fit-content; /* centers only the width of the text */
+  width: fit-content;
   color: #1e1e1e;
 }
 
@@ -393,47 +373,19 @@ a {
   }
 }
 
-/* Experience Grid Styling */
-/*#projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-}*/
-
-/* Card Style */
-/*.grid-item {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-  text-align: center;
-  padding: 1.0rem;
-  color: var(--charcoal);
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}*/
-
-/* Experience Grid – flex version */
 #projects-grid {
-  /* layout */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;     /* centres every wrapped row */
+  justify-content: center;
   gap: 1.5rem;
-
-  /* spacing constraints you already had */
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Card width: keep every tile the same size */
 .grid-item {
-  flex: 0 1 350px;             /* 0 grow | 1 shrink | 350 px basis */
-  width: 350px;                /* makes the height calculations easier */
+  flex: 0 1 350px;
+  width: 350px; 
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -454,7 +406,6 @@ a {
   color: white;
 }
 
-/* Image Style */
 .grid-item img {
   width: 85%;
   height: auto;
@@ -464,13 +415,11 @@ a {
   border-radius: 8px;
 }
 
-/* Title */
 .grid-item h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-/* Description */
 .grid-item p {
   font-size: 0.95rem;
   color: #555;
