@@ -394,18 +394,18 @@ a {
 }
 
 /* Experience Grid Styling */
-#projects-grid {
+/*#projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*280px*/
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
-}
+}*/
 
 /* Card Style */
-.grid-item {
+/*.grid-item {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -414,6 +414,26 @@ a {
   color: var(--charcoal);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}*/
+
+/* Experience Grid – flex version */
+#projects-grid {
+  /* layout */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     /* centres every wrapped row */
+  gap: 1.5rem;
+
+  /* spacing constraints you already had */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card width: keep every tile the same size */
+.grid-item {
+  flex: 0 1 350px;             /* 0 grow | 1 shrink | 350 px basis */
+  width: 350px;                /* makes the height calculations easier */
 }
 
 .grid-item h2 {
