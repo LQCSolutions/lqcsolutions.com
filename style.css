@@ -434,6 +434,14 @@ a {
 .grid-item {
   flex: 0 1 350px;             /* 0 grow | 1 shrink | 350 px basis */
   width: 350px;                /* makes the height calculations easier */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  padding: 1.0rem;
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .grid-item h2 {
