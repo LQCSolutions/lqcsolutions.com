@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Fast GPU Poisson Solver",
       link: "#",
-      description: "Resource-efficent implementation of the Poission equation using CUDA in C++",
+      description: "Resource-efficient implementation of the Poission equation in CUDA",
       image: "images/poisson_surface.png"
     },
   ];
