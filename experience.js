@@ -8,25 +8,25 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Bifurcation Toolkit for PDEs",
-      link: "#",
+      link: "/solutions/bifurcation.html",
       description: "Lightweight Python API for numerical continuation and bifurcation detection",
       image: "images/pycont.png"
     },
     {
       title: "Enhanced Sampling for Protein Folding",
-      link: "#",
+      link: "/solutions/sampling.html",
       description: "New multifidelity sampling algorithm for improved protein structure predition",
       image: "images/alanine_dipeptide.png"
     },
     {
       title: "Probabilistic Inference of Viral Dynamics",
-      link: "#",
+      link: "/solutions/bayesian.html",
       description: "Bayesian data assimilation and prediction of infection rates",
       image: "images/SIR.png"
     },
     {
       title: "Fast GPU Poisson Solver",
-      link: "#",
+      link: "/solutions/poisson.html",
       description: "Resource-efficient implementation of the Poission equation in CUDA",
       image: "images/poisson_surface.png"
     },
