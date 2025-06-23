@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = [
     {
       title: "Digital Twin for Elastic Deformations",
-      link: "#",
+      link: "/projects/elasticity.html",
       description: "Physics-informed AI model for predicting metallic deformations",
       image: "images/elasticity.png"
     },
