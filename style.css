@@ -489,4 +489,5 @@ a {
   padding: 0.5rem 0;
   background-color: var(--light-beige);
   color: var(--charcoal);
+  z-index: 10;
 }
