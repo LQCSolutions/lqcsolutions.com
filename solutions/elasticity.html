@@ -17,7 +17,11 @@
 
     <p class="intro-text">At LQC, we've developed a Neural Operator (NO) that can <strong>instantly predict the complete material displacement</strong> under any applied stress. This approach bypasses the need to re-solve the PDE for each new input.</p>
 
-    <p class="intro-text">Our Neural Operator is based on a <strong>DeepONet architecture</strong> (see picture on the left) with additional convolutional layers in the branch network. Convolutions allow the branch to efficiently encode spatial patterns in the input load. The trunk network learns a compact representation of spatial locations, enabling rapid evaluation of the displacement field over the whole domain.</p>
+    <img src="/images/deeponet_elasticity.png"
+     alt="DeepONet architecture with convolutional branch"
+     style="display: block; max-width: 100%; margin: 2rem auto;" />
+
+    <p class="intro-text">Our Neural Operator is based on a <strong>DeepONet architecture</strong> (see picture above) with additional convolutional layers in the branch network. Convolutions allow the branch to efficiently encode spatial patterns in the input load. The trunk network learns a compact representation of spatial locations, enabling rapid evaluation of the displacement field over the whole domain.</p>
 
     <p class="intro-text">
       Our model generalizes across a wide class of input forces, producing accurate predictions at a fraction of the computational cost of standard solvers.
