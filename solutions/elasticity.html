@@ -10,14 +10,21 @@
   <div id="navbar-placeholder"></div>
 
   <section id="neural-operator-elasticity" class="panel beige">
+  <div class="panel-content">
     <h2>Learning to Solve Elasticity Equations with Neural Operators</h2>
-    <p><strong>Structural simulations are essential</strong> in engineering and material science — from stress analysis in mechanical parts to predicting deformation in biomaterials. Traditional solvers for linear elasticity equations, such as finite element methods, are accurate but computationally intensive when simulating many different force fields or material properties.</p>
+    <p class="intro-text">Structural simulations are essential in engineering and material science. From stress analysis in mechanical parts to predicting deformation in biomaterials, knowing how a material will deform under a load
+      without doing the actual experiment can significantly speed up the design cycle. Traditional finite-element solvers are highly accurate but computationally expensive when simulating the same equations under many different loads material properties.</p>
 
-    <p>At <strong>LQC Solutions</strong>, we've developed a <strong>neural operator</strong> that learns to <strong>instantly predict full-field solutions</strong> to 2D linear elasticity problems — bypassing the need to re-solve the PDE for each new input.</p>
+    <p class="intro-text">At LQC, we've developed a Neural Operator (NO) that can <strong>instantly predict the complete material displacement</strong> under any applied stress. This approach bypasses the need to re-solve the PDE for each new input.</p>
 
-    <p>Our model is based on a <strong>DeepONet architecture enhanced with convolutional layers</strong> in the branch network, allowing it to efficiently encode spatial patterns in the input forcing. The trunk network learns a compact representation of spatial locations, enabling rapid evaluation of the displacement field across the domain.</p>
+    <p class="intro-text">Our Neural Operator is based on a <strong>DeepONet architecture</strong> (see picture on the left) with additional convolutional layers in the branch network. Convolutions allow the branch to efficiently encode spatial patterns in the input load. The trunk network learns a compact representation of spatial locations, enabling rapid evaluation of the displacement field over the whole domain.</p>
 
-    <p><strong>The results are compelling</strong>: once trained, our model generalizes across a wide class of input forces, producing accurate predictions at a fraction of the computational cost of standard solvers. This makes it ideal for real-time simulation, optimization loops, and uncertainty quantification tasks.</p>
+    <p class="intro-text">
+      Our model generalizes across a wide class of input forces, producing accurate predictions at a fraction of the computational cost of standard solvers.
+      <strong>The comparison below</strong> illustrates how the neural operator matches the accuracy of traditional FEM while delivering results orders of magnitude faster.
+      This makes it ideal for real-time simulation, optimization, and uncertainty quantification tasks.
+    </p>
+  </div>
   </section>
 
   <footer class="footer">
