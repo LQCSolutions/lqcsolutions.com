@@ -123,7 +123,7 @@ body {
   display: block;
   width: 70%;
   margin: 1.5rem auto 2rem;
-  transform: translateX(-25%); 
+  transform: translateX(-10%); 
 }
 
 .panel-content p.mission-statement {
