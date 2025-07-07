@@ -9,8 +9,24 @@
   <script src="/inject-partials.js"></script>
   <div id="navbar-placeholder"></div>
 
-  <section id="home" class="panel teal">
-    <p> Hello!</p>
+  <section id="pycont" class="panel beige">
+  <div class="panel-content">
+    <h2>PyCont: Continuation and Bifurcation Detection for Complex Systems</h2>
+    <p class="intro-text">Understanding how complex systems evolve as parameters change is fundamental in fields ranging from physics and engineering to biology and materials science. Whether it's bistability in chemical networks, critical transitions in mechanical systems, or pattern formation in PDEs, detecting bifurcations and continuing solution accross parameters is an essential task in computational science.</p>
+
+    <p class="intro-text">At LQC, we've developed <strong>PyCont</strong>, a lightweight and scalable Python package for pseudo-arclength continuation. PyCont enables users to trace solution curves of PDEs through folds and turning points where classical parameter sweeps fail.
+
+    <img src="/images/deeponet_elasticity.png"
+     alt="DeepONet architecture with convolutional branch"
+     style="display: block; max-width: 100%; margin: 2rem auto;" />
+
+    <h3>PyCont: Continuation and Bifurcation Detection for Complex Systems</h3>
+    <p class="intro-text">PyCont is built around a fast and robust Newton-Krylov solver that efficiently solves large-scale nonlinear systems, including those arising from PDE discretizations. Our pseudo-arclength stepping algorithm ensures stable continuation, while custom Jacobian-vector products and adaptive tangents allow for precise control of step size and curvature.</p>
+
+    <p class="intro-text">
+      In addition to solution tracking, PyCont can detect bifurcation points and branch-switch automatically. This makes it ideal for all kinds of complex nonlinear systems. PyCont provides a fast, flexible, and extensible platform for continuation analysis. Its clean Python interface integrates easily with scientific codebases and simulation pipelines, enabling deeper insight into the structure of your models.
+    </p>
+  </div>
   </section>
 
 </body>
