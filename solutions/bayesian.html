@@ -7,16 +7,23 @@
 
 <body>
   <script src="/inject-partials.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
   <div id="navbar-placeholder"></div>
 
   <section id="SIR" class="panel beige">
   <div class="panel-content">
     <h2>Bayesian Data Assimilation for the SIR Model</h2>
-    <p class="intro-text">Understanding the spread of infectious diseases requires reliable estimates of transmission and recovery parameters. In this project, we developed a <strong>Bayesian data assimilation framework</strong> for the classic SIR (Susceptible-Infected-Recovered) model. Our approach combined a <strong>physics-informed prior</strong> to encode known structural dynamics of the SIR equations, with a <strong>likelihood based on model residuals</strong>, penalizing deviation from the governing differential equations.</p>
+    <p class="intro-text">Understanding the spread of infectious diseases requires reliable estimates of transmission and recovery parameters. In this project, we developed a <strong>Bayesian data assimilation framework</strong> for the classic SIR model. Our approach combined a <strong>physics-informed prior</strong> to encode known structural dynamics of the SIR equations, with a <strong>likelihood based on model residuals</strong>, penalizing deviation from the governing differential equations.</p>
 
-    <p class="intro-text">The SIR model is a set of differential equations given by
-
-      where $$ 
+    <p class="intro-text">The SIR model (\(S =\) Susceptible, \(I =\) Infected, \(R =\) Recovered) is a set of differential equations given by
+      \[
+  \begin{aligned}
+  \frac{dS}{dt} &= -\beta S I \\
+  \frac{dI}{dt} &= \beta S I - \gamma I \\
+  \frac{dR}{dt} &= \gamma I
+  \end{aligned}
+  \]
+      with \(\beta\) the Transmission Rate, \(\gamma\) the Recovery Rate and \(I_0\) the initial infected fraction of the population.
     </p>
     <img src="/images/alanine_dipeptide_cropped.png"
      alt="New Protein Structure Predictions"
