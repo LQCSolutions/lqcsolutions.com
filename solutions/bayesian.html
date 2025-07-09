@@ -9,10 +9,32 @@
   <script src="/inject-partials.js"></script>
   <div id="navbar-placeholder"></div>
 
-  <section id="home" class="panel teal">
-    <p> Hello!</p>
+  <section id="SIR" class="panel beige">
+  <div class="panel-content">
+    <h2>Bayesian Data Assimilation for the SIR Model</h2>
+    <p class="intro-text">Understanding the spread of infectious diseases requires reliable estimates of transmission and recovery parameters. In this project, we developed a <strong>Bayesian data assimilation framework</strong> for the classic SIR (Susceptible-Infected-Recovered) model. Our approach combined a <strong>physics-informed prior</strong> to encode known structural dynamics of the SIR equations, with a <strong>likelihood based on model residuals</strong>, penalizing deviation from the governing differential equations.</p>
+
+    <p class="intro-text">The SIR model is a set of differential equations given by
+
+      where $$ 
+    </p>
+    <img src="/images/alanine_dipeptide_cropped.png"
+     alt="New Protein Structure Predictions"
+     style="width: auto; max-height: 400px; object-fit: cover; object-position: top center; display: block; margin: 0 auto;"/>
+    
+    <p class="intro-text">This Bayesian framework allowed us to infer posterior distributions over the key parameters governing the epidemic, providing both point estimates and uncertainty bounds. The method can be used to integrate noisy or partial outbreak data with domain knowledge, yielding interpretable and trustworthy estimates in real time. An example of such posterior distribution is plotted on the figure below.</p>
+
+    <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
+    <img src="/images/SIR_dist.png"
+     alt="Solution branches of the Pitchfork Bifurcatioh"
+     style="display: block; max-width: 60%; margin: 2rem auto;" />
+    </div>
+  </div>
   </section>
 
+  <footer class="footer">
+    <p>© 2025 LQC Solutions, LLC</p>
+  </footer>
 </body>
 
 </html>
