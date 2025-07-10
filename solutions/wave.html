@@ -12,9 +12,9 @@
   <section id="wave" class="panel beige">
   <div class="panel-content">
     <h2>Finite Element Wave Propagation Suite in Python</h2>
-    <p class="intro-text">Determining how waves propagate through air and solid materials is a huge part of modern communications and mechanical engineering. This includes acoustic waves, electro-magnetic waves and elastodynamic waves through solid materials and the deformations they cause.</p>
+    <p class="intro-text">Understanding how waves travel through air, solids, and electromagnetic fields is fundamental to modern engineering, from wireless communication to acoustic design and structural analysis. These phenomena include acoustic waves in air, electromagnetic waves in space and matter, and elastodynamic waves propagating through solid materials, often coupled with the deformations they induce.</p>
 
-    <p class="intro-text">For this project, we built one big wave propagation and analysis suite in python, based on a unified PDE representation of these three kinds of waves. Based on this unified model, we wrote a general finite element simulator on top of FeniCS for all kinds of 3D geometries and boundary conditions.
+    <p class="intro-text">In this project, we developed a unified wave simulation and analysis suite in Python. By formulating all three wave types within a common partial differential equation (PDE) framework, we were able to build a flexible and extensible solver infrastructure that handles diverse physical domains with a consistent numerical approach.
     </p>
 
     <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
@@ -22,8 +22,10 @@
      alt="Accoustic waves through air"
      style="display: block; max-width: 60%; margin: 2rem auto;" />
     </div>
-  
-    <p class="intro-text">This suite contains automatic mesh importing, connections to a database and automatic hp-analysis.
+    
+    <p class="intro-text">At the core of this framework is a general-purpose finite element solver, implemented on top of FEniCS, capable of simulating wave propagation across complex 3D geometries and boundary conditions. This foundation enables high-fidelity modeling of wave interactions in engineered structures, materials, and environments, all within a single, integrated codebase.</p>
+
+    <p class="intro-text">This suite includes automated mesh importing, seamless integration with a parameter and storage database, and built-in support for automatic hp-refinement analysis
     </p>
   </div>
   </section>
