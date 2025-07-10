@@ -491,3 +491,18 @@ a {
   color: var(--charcoal);
   z-index: 10;
 }
+
+.button-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--soft-teal);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.button-link:hover {
+  background-color: #3e867f;
+}
