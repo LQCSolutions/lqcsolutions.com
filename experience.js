@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/SIR.png"
     },
     {
-      title: "Fast GPU Poisson Solver",
-      link: "/solutions/poisson.html",
-      description: "Resource-efficient implementation of the Poission equation in CUDA",
-      image: "images/poisson_surface.png"
+      title: "Finite Element Wave Propagation Suite",
+      link: "/solutions/wave.html",
+      description: "Python Package for Acoustic, Electromagnetic and Elastodynamic Wave Models",
+      image: "images/wave.png"
     },
   ];
 
