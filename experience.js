@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/elasticity.png"
     },
     {
-      title: "Bifurcation Toolkit for PDEs",
+      title: "Bifurcation Toolkit for PDEs and ML Models",
       link: "/solutions/bifurcation.html",
       description: "Lightweight Python API for numerical continuation and bifurcation detection",
       image: "images/pycont.png"
