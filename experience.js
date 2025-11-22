@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "images/alanine_dipeptide.png"
     },
     {
-      title: "Probabilistic Inference of Viral Dynamics",
+      title: "Uncertainty-Aware Parameter Estimation for Materials",
       link: "/solutions/bayesian.html",
-      description: "Bayesian data assimilation and prediction of infection rates",
-      image: "images/SIR.png"
+      description: "Robust Bayesian Optimization and Uncertainty Quantification for Linear Elasticity",
+      image: "images/Adam N=1000.png"
     },
     {
       title: "Finite Element Wave Propagation Suite",
