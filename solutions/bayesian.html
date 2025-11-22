@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>LQC Solutions - Bayesian Posterior Estimation</title>
+  <title>LQC Solutions - Robust Bayesian Optimization</title>
   <link rel="stylesheet" href="/style.css" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYR12B0NWT"></script>
@@ -21,35 +21,81 @@
 
   <section id="SIR" class="panel beige">
   <div class="panel-content">
-    <h2>Bayesian Data Assimilation for the SIR Model</h2>
-    <p class="intro-text">Understanding the spread of infectious diseases requires reliable estimates of transmission and recovery parameters. In this project, we developed a <strong>Bayesian data assimilation framework</strong> for the classic SIR model. Our approach combined a <strong>physics-informed prior</strong> to encode known structural dynamics of the SIR equations, with a <strong>likelihood based on model residuals</strong>, penalizing deviation from the governing differential equations.</p>
+    <h2>Reliable Bayesian Parameter Estimation for Real Engineering Systems</h2>
+    <p class="intro-text">Robust and accurate parameter estimation is essential for building reliable data models, simulations, and digital twins. Whether your goal is identifying material properties, building a physics model, or training a digital twin from measurement data, 
+                          you need statistical inference methods that are reliable, stable, and grounded in first principles.</p>
 
-    <p class="intro-text">The SIR model (\(S =\) Susceptible, \(I =\) Infected, \(R =\) Recovered) is a set of differential equations given by
-      \[
-  \begin{aligned}
-  \frac{dS}{dt} &= -\beta S I \\
-  \frac{dI}{dt} &= \beta S I - \gamma I \\
-  \frac{dR}{dt} &= \gamma I
-  \end{aligned}
-  \]
-      with \(\beta\) the Transmission Rate, \(\gamma\) the Recovery Rate and \(I_0\) the initial infected fraction of the population.
-    </p>
-  
-    <p class="intro-text">Our Bayesian framework allowed us to infer posterior distributions over the key parameters governing the epidemic, providing both point estimates and uncertainty bounds. The method can be used to integrate noisy or partial outbreak data with domain knowledge, yielding interpretable and trustworthy estimates in real time. An example of the delivered posterior distribution is plotted on the figure below.</p>
+    <p>At LQC Solutions we specialize in <strong>robust Bayesian optimization workflows</strong>.</p>                      
+    
+    <section>
+  <h2>Why Bayesian Methods?</h2>
+  <p>
+    Bayesian inference provides a principled way to combine:
+  </p>
+  <ul>
+    <li>Physics-based simulation outputs</li>
+    <li>Real-world measurements</li>
+    <li>Domain knowledge and uncertainty</li>
+  </ul>
+  <p>
+    The result is a calibrated model that doesn’t just fit the data — it understands the uncertainty around it.
+    That leads to better predictions, safer extrapolation, and more robust engineering decisions.
+  </p>
+</section>
 
-    <div style="display: flex; justify-content: center; gap: 4rem; margin: 2rem 0;">
-    <img src="/images/SIR_dist.png"
-     alt="Posterior Distribution of the SIR model parameters"
-     style="display: block; max-width: 60%; margin: 2rem auto;" />
-    </div>
+<section>
+  <h2>How We Make Bayesian Optimization Work in Practice</h2>
+  <p>
+    Bayesian workflows are powerful, but they require careful numerical engineering. This is where our expertise comes in.
+  </p>
+  <p>We build inference pipelines that are:</p>
 
-    <p class="intro-text">Our Bayesian workflow is mainly used to develop new SIR-type models in an automated way. On average, our implementation generates millions of samples a day and serves as an invaluable data-generation tool for our client.</p>
-  </div>
+  <h3>Robust to noise</h3>
+  <p>
+    We incorporate realistic measurement models and smoothing techniques to keep optimization stable.
+  </p>
 
-  <div class="back-button-wrapper">
-    <a href="/#experience" class="button-link">← Back to our Solutions</a>
-  </div>
-  </section>
+  <h3>Efficient for simulation-heavy problems</h3>
+  <p>
+    We combine fast PDE solves, surrogate modeling, and adaptive sampling to make inference feasible even for complex systems.
+  </p>
+
+  <h3>Stable across parameter ranges</h3>
+  <p>
+    We design priors, reparameterizations, and continuation strategies that keep optimization well-conditioned.
+  </p>
+
+  <h3>Optimizer-friendly</h3>
+  <p>
+    We use modern gradient-based optimizers (Adam, quasi-Newton, etc.) with adaptive step-size control and gradient estimation
+    strategies tailored to physics-based models.
+  </p>
+
+  <h3>Scalable as the dataset grows</h3>
+  <p>
+    Once the initial MAP estimate stabilizes, we progressively incorporate more data to refine the parameters without
+    destabilizing convergence.
+  </p>
+</section>
+
+<section>
+  <h2>The Result</h2>
+  <p>You get a parameter estimation pipeline that is:</p>
+  <ul>
+    <li>Numerically stable</li>
+    <li>Predictive and uncertainty-aware</li>
+    <li>Efficient to run</li>
+    <li>Fully compatible with your existing simulations and workflows</li>
+  </ul>
+  <p>
+    From elasticity problems to large-scale simulation environments, our Bayesian pipelines help teams unlock reliable,
+    reproducible parameter inference even when data is messy, sparse, or high-dimensional.
+  </p>
+  <p>
+    If your organization needs stable, physics-informed Bayesian optimization, or wants to build robust calibration workflows,
+    we’d be excited to help.
+  </p>
+</section>
 
   <footer class="footer">
     <p>© 2025 LQC Solutions, LLC</p>
