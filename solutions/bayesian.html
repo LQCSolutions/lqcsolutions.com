@@ -60,17 +60,18 @@
       jeopardizing convergence and learning.
     </p>
 
-    <h2>The Result</h2>
-    <p class="intro-text">You get a parameter estimation pipeline that is:</p>
-    <ul class="lqc-list">
-      <li>Numerically stable</li>
-      <li>Predictive and uncertainty-aware</li>
-      <li>Efficient to run</li>
-      <li>Fully compatible with your existing simulations and workflows</li>
-    </ul>
+    <h3>Our Workflows in Action</h3>
     <p class="intro-text">
-      From elasticity problems to large-scale simulation environments, our Bayesian pipelines help teams unlock reliable,
-      reproducible parameter inference even when data is messy, sparse, or high-dimensional.
+      The Young modulus and the Poisson ratio are key mechanical parameters that describe the elastic deformation of materials. A classical test setup for estimating these is by clamping the material on the 
+      left edge, and applying a constant traction force on the right. 
+      
+      Using Direct Image Correlation (DIC) measurements these deformations can be observed. These deformations can also be estimated by solving the elastostatic equations
+      $$
+         - \nabla \cdot \sigma(u) = f(x)
+      $$
+      for a fixed Young's modulus $E$ and Poisson ratio $\nu$. Bayesian inference solves the inverse problem: find the parameter values $E$ and $\nu$ that describe the DIC measurements best.
+
+      To solve this inverse problem reliably, we developed a state-of-the-art Bayesian optimizer that tightly integrates robust MAP estimation with accurate finite element simulations.
     </p>
     <p class="intro-text">
       If your organization needs stable, physics-informed Bayesian optimization, or wants to build robust calibration workflows,
