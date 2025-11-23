@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Uncertainty-Aware Parameter Estimation for Materials",
       link: "/solutions/bayesian.html",
       description: "Robust Bayesian Optimization and Uncertainty Quantification for Linear Elasticity",
-      image: "images/Adam N=1000.png"
+      image: "images/Bayes.png"
     },
     {
       title: "Finite Element Wave Propagation Suite",
